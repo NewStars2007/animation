@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: violet;
+    animation-name: box;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    animation-duration: 1s;
+}
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: violet;
+    animation-name: box1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    margin-left: 600px;
+    margin-top: -150px;
+    animation-duration: 1s;
+}
+@keyframes box {
+
+    to{
+        transform: translate(500px);
+    }
+}
+@keyframes box1 {
+    to{
+        transform: translateX(100%);
+        margin-left: 600px;
+    }
+}

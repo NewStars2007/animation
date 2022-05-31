@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(136,146,176);
+    border-radius: 20px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: rgb(10,25,47);
+}
+.logo{
+    width: 55px;
+    height: 55px;
+    border: 3px solid rgb(100,255,218);
+    color: rgb(100,255,218);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.collection{
+    display: flex;
+    list-style: none;
+}
+.item{
+    margin-right: 40px;
+    animation: items .5s linear 1.5s   forwards;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+@keyframes items {
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.logo{     
+    animation: logo 0.8s  0.5s  forwards ;
+    transform: scale(.5) translateY(-30px);
+    opacity: 0;
+}
+@keyframes logo {
+    to{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+.item:nth-child(2){
+    animation-delay: 1.75s;
+}
+.item:nth-child(3){
+    animation-delay: 2s;
+}
+.item:nth-child(4){
+    animation-delay: 2.25s;
+}
+.item:nth-child(5){
+    animation-delay: 2.5s;
+    margin-top: -10px;
+}
+.banner_text{
+    padding: 30px 100px;
+    color: #fff;
+}
+.btn{
+    width: 82px;
+    height: 39px;
+    background-color: rgb(10,25,47);
+    border: 3px solid rgb(72,184,166);
+    border-radius: 6px;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: rgba(173, 255, 234, 0.701);
+    transition: .5s;
+}
+.href{
+    color: rgb(72,184,166);
+    text-decoration: none;
+}
+.hi{
+    color: rgb(72,184,166);
+    margin-left: 160px;
+    margin-top: 80px;
+    animation: items .5s linear 3s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+@keyframes hi {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.britany{
+    font-size: 60px;
+    padding: 10px;
+    margin-left: 145px;
+    color: rgb(204,214,246);
+    animation: briti .5s linear 3.25s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+@keyframes briti {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.for{
+    color:rgb(136,146,176);
+    font-size: 50px;
+    padding: 10px;
+    margin-left: 145px;
+    animation: for .5s linear 3.5s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+@keyframes for {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.soft{
+    color: rgb(136,146,176);
+    margin-left: 155px;
+    line-height: 20px;
+    animation: soft .5s linear 3.75s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+@keyframes soft {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.soft2{
+    color: rgb(136,146,176);
+    margin-left: 155px;
+    margin-top: 10px;
+    animation: soft2 .5s linear 3.80s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+@keyframes soft2 {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.soft3{
+    color: rgb(136,146,176);
+    margin-left: 155px;
+    margin-top: 10px;
+    animation: soft2 .5s linear 3.85s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+@keyframes soft3 {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.btn_btn{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(10,25,47);
+    margin-left: 150px;
+    margin-top: 50px;
+    border: 3px solid rgb(100,255,218);
+    color: rgb(100,255,218);
+    border-radius: 6px;
+    animation: btn_btn .5s linear 4s   forwards;
+    transform: translateY(30px);
+    opacity: 0;
+    cursor: pointer;
+}
+@keyframes btn_btn {
+    to{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+}
+.chiz{
+    width: 110px;
+    height: 2px;
+    background: rgb(136,146,176);
+    transform: rotate(450deg);
+    margin-top: 100px;
+    animation: do .5s linear 4.4s   forwards;
+    opacity: 0;
+}
+@keyframes do {
+    to{
+        opacity: 1;
+    }
+}
+.fa-codepen{
+    color: rgb(136,146,176);
+    font-size: 22px;
+    margin-left: 42px;
+    position: absolute;
+    top: 600px;
+    transition: .5s;
+}
+.fa-codepen:hover{
+    color: rgb(100,255,218);
+    cursor: pointer;
+    margin-top: -5px;
+    transition: .5;
+}
+.fa-linkedin-in{
+    color: rgb(136,146,176);
+    font-size: 22px;
+    margin-left: 45px;
+    position: absolute;
+    top: 540px;
+    left: 0;
+    transition: .5s;
+    animation: do .5s linear 4.4s   forwards;
+    opacity: 0;
+}
+@keyframes do {
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+.fa-linkedin-in:hover{
+    color: rgb(100,255,218);
+    cursor: pointer;
+    margin-top: -5px;
+    transition: .5;
+}
+
+.fa-github{
+    color: rgb(136,146,176);
+    font-size: 25px;
+    position: absolute;
+    top: 370px;
+    left: 45px;
+    transition: .5s;
+    animation: do .5s linear 4.4s   forwards;
+    opacity: 0;
+}
+@keyframes do {
+    to{
+        opacity: 1;
+    }
+}
+.icon{
+    animation: do .5s linear 4.4s   forwards;
+    opacity: 0;
+}
+@keyframes do {
+    to{
+        opacity: 1;
+    }
+}
+.fa-github:hover{
+    color: rgb(100,255,218);
+    cursor: pointer;
+    margin-top: -5px;
+    transition: .5;
+}
+.fa-instagram{
+    color: rgb(136,146,176);
+    font-size: 25px;
+    position: absolute;
+    top: 430px;
+    left: 50px;
+    transition: .5s;
+}
+.fa-instagram:hover{
+    color: rgb(100,255,218);
+    cursor: pointer;
+    margin-top: -5px;
+    transition: .5;
+}
+.fa-twitter{
+    color: rgb(136,146,176);
+    font-size: 25px;
+    position: absolute;
+    top: 480px;
+    left: 45px;
+    transition: .5s;
+}
+.fa-twitter:hover{
+    color: rgb(100,255,218);
+    cursor: pointer;
+    margin-top: -5px;
+    transition: .5;
+}
+.do{
+    margin-left: 1370px;
+    transform: rotate(450deg);
+    margin-top: -200px;
+    color: rgb(136,146,176);
+    transition: .5s;
+    animation: do .5s linear 4.4s   forwards;
+    opacity: 0;
+}
+@keyframes do {
+    to{
+        transition: 4.5s;
+        opacity: 1;
+    }
+}
+
+
+.chiz2{
+    width: 110px;
+    height: 2px;
+    background: rgb(136,146,176);
+    transform: rotate(450deg);
+    margin-top: 180px;
+    margin-left: 1400px;
+    animation: do .5s linear 4.4s   forwards;
+    opacity: 0;
+}
+@keyframes identifier {
+    to{
+        opacity: 1;
+    }
+}
